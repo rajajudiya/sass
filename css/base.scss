@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$primary: #0d6efd;
+$fs: 16px;
+$lh: 1.5;
+$fw: 400;
+$gutter-width: 15px;
+
+
+:root {
+    --primary-color: #($--primary);
+    --fs: #($fs);
+    --lh: #($lh);
+    --fw: #($fw);
+    --gutter-width: #($gutter-width);
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+// img {
+//     width: 100%;
+//     display: block;
+// }
+
+body {
+    font-size: var(--fs);
+    font-weight: var(--fw);
+    font-family: noto sans;
+    line-height: var(--lh);
+    color: var(--text-color);
+}
+
+.container {
+    margin: 0 auto;
+    width: 1320px;
+    padding-left: var(--gutter-width);
+    padding-right: var(--gutter-width);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--gutter-width));
+    margin-right: calc(-1 * var(--gutter-width));
+}
+
