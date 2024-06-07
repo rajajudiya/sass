@@ -1,5 +1,5 @@
 $primary-color: #3498db;
-$bg-color: #2c3e50;
+$bg-color: white;
 $text-color: #434343;
 
 
@@ -18,8 +18,11 @@ $text-color: #434343;
   }
   .nav{
     margin: 0px 50px;
+    padding: 40px;
   }
-
+  .padding{
+    padding-left: 40px;
+  }
   .action {
     button {
       background-color: $primary-color; 
@@ -35,4 +38,12 @@ $text-color: #434343;
       }
     }
   }
+  .btn{
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+  .btn:hover{
+    color: blue;
+  }
 }
+

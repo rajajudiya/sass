@@ -1,0 +1,42 @@
+.exp{
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20em;
+    .exp-content{
+        
+        h2{
+            text-align: start;
+            font-size: 50px;
+        }
+        p{
+            padding: 10px 0;
+        }
+    }
+    .d-flex{
+        display: flex;
+    }
+    .po-ab{
+        position: absolute;
+    }
+    .po-rel{
+        position: relative;
+    }
+    .ar{
+        p{
+            text-align: start;
+            padding: 10px 100px 0 0;
+        }
+        svg{
+            margin: 50px 0 0 0;
+            height: 50px;
+            padding: 5px 20px 0 0;
+        }
+    }
+    .im{
+        position: absolute;
+        top: 170%;
+        left: 50%;
+    }
+}

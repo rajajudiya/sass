@@ -47,7 +47,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #2c3e50;
+  background-color: white;
 }
 .header .logo {
   flex-grow: 1;
@@ -57,6 +57,10 @@ body {
 }
 .header .nav {
   margin: 0px 50px;
+  padding: 40px;
+}
+.header .padding {
+  padding-left: 40px;
 }
 .header .action button {
   background-color: #3498db;
@@ -70,6 +74,13 @@ body {
 }
 .header .action button:hover {
   background-color: #217dbb;
+}
+.header .btn {
+  margin-left: 10px;
+  padding-left: 20px;
+}
+.header .btn:hover {
+  color: blue;
 }
 
 .w-1 {
@@ -125,39 +136,295 @@ body {
   padding-right: var(--gutter-width);
 }
 
-.heading h2 {
-  text-align: start;
-  color: #9B362D;
-  font-size: 30px;
-  font-weight: bolder;
-  margin-bottom: 20px;
+.banner-back-img .banner-content {
+  color: white;
+  text-align: center;
+  padding: 40px 0;
 }
-.heading p {
-  text-align: start;
-  color: #9B362D;
-  font-weight: bolder;
-  margin: 30px 0;
+.banner-back-img .banner-content p {
+  text-align: center;
 }
-/* header */
-.loader{
-  width: 100%;
-  height: 100vh;
-  background-color: #212121;
+.banner-back-img .banner-content .d-block {
+  display: block;
+}
+.banner-back-img .btn {
+  height: 50px;
+  width: 200px;
+  background-color: #F4AD1E;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 3em;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: white;
+}
+.banner-back-img .btn span {
+  color: black;
+  font-size: 20px;
+}
+
+.exp {
+  margin: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  z-index: 9999;
+  margin-bottom: 20em;
 }
-.loader img{
-  animation:bounce 0.3s ease-in infinite alternate;
+.exp .exp-content h2 {
+  text-align: start;
+  font-size: 50px;
 }
-@keyframes bounce{
-  0% {
-      transform: translateY(0%);
-  }
-  100% {
-      transform: translateY(-50%);
-  }
+.exp .exp-content p {
+  padding: 10px 0;
 }
+.exp .d-flex {
+  display: flex;
+}
+.exp .po-ab {
+  position: absolute;
+}
+.exp .po-rel {
+  position: relative;
+}
+.exp .ar p {
+  text-align: start;
+  padding: 10px 100px 0 0;
+}
+.exp .ar svg {
+  margin: 50px 0 0 0;
+  height: 50px;
+  padding: 5px 20px 0 0;
+}
+.exp .im {
+  position: absolute;
+  top: 170%;
+  left: 50%;
+}
+
+.recentss h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.recentss .d-flex {
+  display: flex;
+}
+.recentss ul li {
+  padding: 20px;
+  list-style: none;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+.recentss ul li a {
+  color: #404348;
+}
+.recentss .recent-images .img-4 {
+  display: inline-block;
+}
+.recentss .mr {
+  margin-left: 50px;
+}
+.recentss .wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+.recentss .card {
+  width: 280px;
+  height: 360px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0);
+  transition: 0.5s ease-in-out;
+}
+.recentss .card:hover {
+  transform: translateY(20px);
+}
+.recentss .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgb(150, 201, 61));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+.recentss .card:hover:before {
+  opacity: 1;
+}
+.recentss .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.recentss .card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+.recentss .card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.review-con {
+  background-image: url("/images/client/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  margin-top: 10em;
+  border-radius: 10px;
+}
+.review-con .heading p {
+  color: #ffb31a;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-align: center;
+  padding-top: 10em;
+}
+.review-con .heading h2 {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  padding: 0.5em 0;
+}
+.review-con .heading .quote {
+  height: 50px;
+  font-size: 120px;
+  margin-left: 5em;
+  opacity: 0.5;
+  line-height: 1;
+}
+.review-con .content p {
+  color: black;
+  font-size: 20px;
+}
+.review-con .content-3 {
+  color: #ffb31a;
+  font-size: 20px;
+  padding-top: 10em;
+}
+.review-con .content-4 {
+  color: aliceblue;
+  font-size: 20px;
+  margin-left: 30em;
+  padding-top: 10em;
+}
+
+.footer {
+  background-image: url("/images/footer/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  color: white;
+  padding: 40px 0;
+  margin: 50px 0;
+}
+
+.back {
+  background-color: aliceblue;
+  border-radius: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.footer-column h4 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #bbb;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.footer-social a:hover {
+  color: #61dafb;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.newsletter input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter button:hover {
+  background-color: #21a1f1;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
